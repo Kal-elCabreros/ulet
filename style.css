@@ -29,17 +29,28 @@ body {
     color: #ffc107 !important;
 }
 
-/* Hero / Carousel Section */
-.hero-slide {
+/* Hero Section */
+.hero-section {
     min-height: 100vh;
     padding-top: 70px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.carousel-item h1 {
+.hero-section h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.carousel-item .lead {
+.hero-section .lead {
     font-size: 1.3rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
@@ -154,15 +165,16 @@ footer a:hover {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .hero-slide {
+
+    .hero-section {
         min-height: 70vh;
     }
 
-    .hero-slide h1 {
+    .hero-section h1 {
         font-size: 2rem;
     }
 
-    .hero-slide .lead {
+    .hero-section .lead {
         font-size: 1rem;
     }
 
@@ -176,11 +188,12 @@ footer a:hover {
 }
 
 @media (max-width: 576px) {
-    .hero-slide {
+
+    .hero-section {
         min-height: 60vh;
     }
 
-    .hero-slide h1 {
+    .hero-section h1 {
         font-size: 1.6rem;
     }
 
