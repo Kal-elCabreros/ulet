@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG D. Coffee and Tea Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" alt="Logo" height="35" class="me-2">
+                BIG D. Coffee &amp; Tea Hub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">BIG D. Coffee &amp; Tea Hub</h1>
+            <p class="lead">Happiness starts here!</p>
+            <a href="#menu" class="btn btn-warning btn-lg">See Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Alert -->
+    <div class="container mt-3">
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>Promo!</strong> Follow us on Instagram @bigdcoffeeandteahub for updates and discounts!
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/counter.jpg" alt="Our Shop" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h4>Our Story</h4>
+                    <p>BIG D. Coffee and Tea Hub is your go-to spot for affordable and delicious drinks. We offer a wide selection of milk teas, coffees, fruit teas, blended beverages, and snacks.</p>
+                    <p>Whether you want to study, hang out with friends, or just enjoy a good cup — we got you!</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Milk Tea, Coffee, Fruit Tea &amp; Blended Drinks</li>
+                        <li class="list-group-item">Cozy seating with free Wi-Fi</li>
+                        <li class="list-group-item">Affordable prices starting at ₱75</li>
+                        <li class="list-group-item">Book nook for readers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Menu</h2>
+
+            <!-- Menu Cards -->
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="images/milktea.jpg" class="card-img-top" alt="Milk Tea">
+                        <div class="card-body">
+                            <h5 class="card-title">Milk Tea <span class="badge bg-warning text-dark">Popular</span></h5>
+                            <p class="card-text">Classic flavors like Okinawa, Wintermelon, Taro, Matcha, and more.</p>
+                            <p><strong>₱75 - ₱125</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="images/latte.jpg" class="card-img-top" alt="Coffee">
+                        <div class="card-body">
+                            <h5 class="card-title">Coffee <span class="badge bg-danger">Best Seller</span></h5>
+                            <p class="card-text">Americano, Latte, Mocha, Spanish Latte, Caramel Macchiato, and more.</p>
+                            <p><strong>₱70 - ₱150</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="images/fries-basket.jpg" class="card-img-top" alt="Snacks">
+                        <div class="card-body">
+                            <h5 class="card-title">Snacks <span class="badge bg-success">Yummy</span></h5>
+                            <p class="card-text">Fries, Cheese Sticks, Onion Rings, Nachos, Cookies, and Brownies.</p>
+                            <p><strong>₱60 - ₱70</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion for full menu -->
+            <h4 class="mt-4 mb-3">Full Menu</h4>
+            <div class="accordion" id="menuAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#milk">Classic Milk Tea</button>
+                    </h2>
+                    <div id="milk" class="accordion-collapse collapse show" data-bs-parent="#menuAccordion">
+                        <div class="accordion-body">
+                            Chocolate, Red Velvet, Okinawa, Wintermelon, Taro, Matcha — ₱75 (Juts) / ₱90 (Daks)
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cream">Cream Cheese Milk Tea</button>
+                    </h2>
+                    <div id="cream" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                        <div class="accordion-body">
+                            Red Velvet, Taro Overload, Matcha Extreme — ₱90/₱120 | Chocolate Mousse, Okinawa Graham, Cookies &amp; Cream — ₱95/₱125
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fruit">Fruit Tea</button>
+                    </h2>
+                    <div id="fruit" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                        <div class="accordion-body">
+                            Green Apple, Lychee, Strawberry, 4 Seasons, Mango, Blue Lemon, Blueberry, Honey Peach — ₱80/₱95
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#blended">Blended Beverages</button>
+                    </h2>
+                    <div id="blended" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                        <div class="accordion-body">
+                            Salted Caramel, Yema de Leche, Coffee Crumble, Wayne's Strawberry, Cookies &amp; Cream — ₱145/₱160
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coffee">Coffee Extraction</button>
+                    </h2>
+                    <div id="coffee" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                        <div class="accordion-body">
+                            Americano, Latte, Mocha, Caramel Macchiato, Spanish Latte, Hazelnut Charcoal, Pumpkin Spice — Iced ₱105/₱150 | Hot ₱70/₱95
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="images/lounge.jpg" class="img-fluid rounded" alt="Lounge">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="images/latte-art.jpg" class="img-fluid rounded" alt="Latte Art">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="images/books.jpg" class="img-fluid rounded" alt="Books">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="images/cookies.jpg" class="img-fluid rounded" alt="Cookies and Matcha">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="images/nachos.jpg" class="img-fluid rounded" alt="Nachos">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="images/fruit-tea.jpg" class="img-fluid rounded" alt="Fruit Tea">
+                </div>
+            </div>
+
+            <!-- Modal trigger -->
+            <div class="text-center mt-3">
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#visitModal">Want to see more? Visit us!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="visitModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Visit BIG D.!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Come visit us and experience the full BIG D. vibe! Follow us on social media for updates.</p>
+                    <p><strong>Instagram &amp; Facebook:</strong> @bigdcoffeeandteahub</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Your email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Find Us</h5>
+                    <p><i class="bi bi-geo-alt"></i> BIG D. Coffee and Tea Hub, Philippines</p>
+                    <p><i class="bi bi-instagram"></i> @bigdcoffeeandteahub</p>
+                    <p><i class="bi bi-facebook"></i> BIG D. Coffee and Tea Hub</p>
+
+                    <h5 class="mt-4">Price Summary</h5>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Price Range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Classic Milk Tea</td><td>P75 - P90</td></tr>
+                            <tr><td>Cream Cheese</td><td>P90 - P125</td></tr>
+                            <tr><td>Fruit Tea</td><td>P80 - P95</td></tr>
+                            <tr><td>Blended</td><td>P145 - P160</td></tr>
+                            <tr><td>Coffee</td><td>P70 - P150</td></tr>
+                            <tr><td>Snacks</td><td>P60 - P70</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-1">BIG D. Coffee and Tea Hub</p>
+        <p class="mb-1">Follow us: @bigdcoffeeandteahub</p>
+        <p class="mb-0">&copy; 2026 All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
